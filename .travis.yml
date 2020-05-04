@@ -17,6 +17,15 @@ branches:
 
 matrix:
   include:
+  - name: Yoast SEO 13.5
+    php: 7.2
+    env: WP_VERSION=4.9 WP_MULTISITE=0 YOAST_VERSION=13.5
+  - name: Yoast SEO 14.0
+    php: 7.2
+    env: WP_VERSION=4.9 WP_MULTISITE=0 YOAST_VERSION=14.0
+  - name: Yoast SEO 14.0.1
+    php: 7.2
+    env: WP_VERSION=4.9 WP_MULTISITE=0 YOAST_VERSION=14.0.1
   - name: Yoast SEO 14.0.2
     php: 7.2
     env: WP_VERSION=4.9 WP_MULTISITE=0 YOAST_VERSION=14.0.2
