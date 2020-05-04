@@ -13,31 +13,19 @@ notifications:
 branches:
   only:
     - master
+    - yoastseo
 
 matrix:
   include:
-  - name: PHPCS
+  - name: Yoast SEO 14.0.2
     php: 7.2
-    env: WP_VERSION=latest WP_MULTISITE=0 PHPCS=1
-  - name: WP 4.9
+    env: WP_VERSION=4.9 WP_MULTISITE=0 YOAST_VERSION=14.0.2
+  - name: Yoast SEO 14.0.3
     php: 7.2
-    env: WP_VERSION=4.9 WP_MULTISITE=0
-  - name: PHP 5.6
-    php: 5.6
-    env: WP_VERSION=latest WP_MULTISITE=0
-  - name: PHP 7.4
-    php: 7.4
-    env: WP_VERSION=latest WP_MULTISITE=0
-  - name: Multisite
-    php: 7.3
-    env: WP_VERSION=latest WP_MULTISITE=1
-  - name: WP Nightly
-    php: 7.4
-    env: WP_VERSION=nightly WP_MULTISITE=0
-  allow_failures:
-  - name: WP Nightly
-    php: 7.4
-    env: WP_VERSION=nightly WP_MULTISITE=0
+    env: WP_VERSION=4.9 WP_MULTISITE=0 YOAST_VERSION=14.0.3
+  - name: Yoast SEO 14.0.4
+    php: 7.2
+    env: WP_VERSION=4.9 WP_MULTISITE=0 YOAST_VERSION=14.0.4
 
 before_script:
   - |

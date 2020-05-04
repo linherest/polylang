@@ -35,7 +35,7 @@ mkdir -p $TMPDIR/jetpack
 mv $TMPDIR/downloads/jetpack/* $TMPDIR/jetpack/
 
 #Install Yoast SEO
-download https://downloads.wordpress.org/plugin/wordpress-seo.zip $TMPDIR/downloads/wordpress-seo.zip
+download https://downloads.wordpress.org/plugin/wordpress-seo.$YOAST_VERSION.zip $TMPDIR/downloads/wordpress-seo.zip
 unzip -q $TMPDIR/downloads/wordpress-seo.zip -d  $TMPDIR/downloads/
 mkdir -p $TMPDIR/wordpress-seo
 mv $TMPDIR/downloads/wordpress-seo/* $TMPDIR/wordpress-seo/
